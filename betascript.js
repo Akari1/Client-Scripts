@@ -1,4 +1,5 @@
-/* Silone's Client Script! Type ~help to get started */
+/* Silone's Client Script! Type ~help to get started 
+ The script is buggy and some commands don't work*/
 var script_url = "http://pastebin.com/raw.php?i=zvgivvgV";
 events = ({
       beforeSendMessage: function(message, channel) {
