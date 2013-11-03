@@ -1,6 +1,6 @@
 /* Silone's Client Script! Type ~help to get started 
  The script is buggy and some commands don't work*/
-var script_url = "http://pastebin.com/raw.php?i=zvgivvgV";
+var script_url = "https://raw.github.com/Silone1/Client-Scripts/master/betascript.js";
 events = ({
       beforeSendMessage: function(message, channel) {
           var command = "",
