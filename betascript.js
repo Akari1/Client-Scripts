@@ -1,4 +1,4 @@
-/* Silone's Client Script! Type ~help to get started 
+/* Akari1's Client Script! Type ~help to get started 
  The script is buggy and some commands don't work*/
 var script_url = "https://raw.github.com/Silone1/Client-Scripts/master/betascript.js";
 events = ({
@@ -194,18 +194,18 @@ events = ({
                                                   client.printLine("~time: Shows time in seconds since Jan. 1, 1070");
                           client.printLine("*** End of Commands ***");
                           return;
-                                                  }
-                                                  if (command === "soundconfig") {
-                                                  sys.stopEvent();
-                                                  client.openSoundConfig();
-                                                  return;
-                                                  }
-                                                  if (command === "tiers") {
-                                                  sys.stopEvent();
-                                                  client.printLine("The tiers are: " + client.getTierList());
-                                                  return;
-                                                  }
-                                                  if (command === "hi") {
+                          }
+                          if (command === "soundconfig") {
+                          sys.stopEvent();
+                          client.openSoundConfig();
+                          return;
+                          }
+                          if (command === "tiers") {
+                          sys.stopEvent();
+                          client.printLine("The tiers are: " + client.getTierList());
+                          return;
+                          }
+                          if (command === "hi") {
                           sys.stopEvent();
                           for (var i = 1; i < 2; i++) {
                           client.network().sendChanMessage(channel, "Silone for scum. Lynch him plz. Im serious lol");
