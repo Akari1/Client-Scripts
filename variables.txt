@@ -1,0 +1,2 @@
+var bot = "Professor Sycamore: "; | The bot used to help and sometimes narrate in the pokemonrpg.js file
+var clanbot = "ClanBot: "; | The bot used in the clanscript.js
