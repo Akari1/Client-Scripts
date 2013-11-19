@@ -91,7 +91,7 @@ events = ({
             }
             if (command === "next1") {
                 sys.stopEvent();
-                client.printLine("2. Silone is cool.");
+                client.printLine("2. Akari can script.");
                 client.printLine("A. True");
                 client.printLine("B. False");
                 client.printLine("Points: 1");
