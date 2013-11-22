@@ -192,7 +192,15 @@ events = ({
                 client.printLine("~soundconfig: opens sound config video");
                 client.printLine("~tiers: View the current tiers.");
                 client.printLine("~time: Shows time in seconds since Jan. 1, 1070");
+                client.printLine("~spin: You get a random pokemon.Pokemon is showed to everybody in the channel.");
+                client.printLine("~move: Uses a random move, cannot choose target.Showed to everybody in the channel.");
+                client.printLine("~pikachu: Show your pikachu love!");
                 client.printLine("*** End of Commands ***");
+                return;
+            }
+            if (command === "pikachu") {
+               sys.stopEvent();
+               client.printHtml("<img src = 'pokemon:num=25'><h1><b>Pikachu!</h></b > ");
                 return;
             }
             if (command === "soundconfig") {
@@ -205,10 +213,14 @@ events = ({
                 client.printLine("The tiers are: " + client.getTierList());
                 return;
             }
-            if (command === "hi") {
+            if (command === "move") {
+               sys.stopEvent();
+               client.network().sendChanMessage(channel, "*** " + client.ownName() + " used " + sys.move(sys.rand(1, 560)) + "!");
+               return;
+            }
+            if (command === "spin") {
                 sys.stopEvent();
-                for (var i = 1; i < 2; i++) {
-                    client.network().sendChanMessage(channel, "Silone for scum. Lynch him plz. Im serious lol");
+                    client.network().sendChanMessage(channel, "*** " + client.ownName() + " spins the wheel and gets a... " + sys.pokemon(sys.rand(1, 560)) + "!");
                     return;
                 }
                 if (command === "osname") {
@@ -224,5 +236,4 @@ events = ({
                 }
             }
         }
-    }
-})
+});
