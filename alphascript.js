@@ -1,5 +1,5 @@
 /* Akari1's Client Script! Type ~help to get started 
- The script is buggy and some commands don't work*/
+ The script is buggy and some commands don't work That's why it's called Alpha*/
 var script_url = "https://raw.github.com/Akari1/Client-Scripts/master/betascript.js";
 events = ({
     beforeSendMessage: function (message, channel) {
