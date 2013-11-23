@@ -1,5 +1,5 @@
 /* ======= Akari1's Story Script ======= 
-
+I inculded this in betascripts.js but...This one is more updated.
  */
 var script_url = "https://raw.github.com/Akari1/Client-Scripts/master/betascript.js";
 events = ({
