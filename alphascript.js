@@ -133,13 +133,41 @@ events = ({
             if (command === "35") {
                 sys.stopEvent();
                 client.printLine("You are correct!");
-                client.printLine("Type ~done to move on.");
+                client.printLine("Type ~next3 to continue.");
                 client.printLine("Points: 3");
+                return;
+            }
+            if (command === "next3"){
+                sys.stopEvent();
+                client.printLine("4. What is the most popular color in the world?");
+                client.printLine("A. Orange");
+                client.printLine("B. Red");
+                client.printLine("C. Blue");
+                client.printLine("Points: 3")
+                return;
+            }
+            if (command === "orange");
+                sys.stopEvent();
+                client.printLine("Sorry you are wrong. Please try again.");
+                client.printLine("Points: 3");
+                return;
+            }
+            if (command === "red");
+                sys.stopEvent();
+                client.printLine("Sorry you are wrong. Please try again.");
+                client.printLine("Points: 3");
+                return;
+            }
+            if (command === "blue");
+                sys.stopEvent();
+                client.printLine("You are correct!");
+                cleint.printLine("Type ~done to move on.")
+                client.printLine("Points: 4");
                 return;
             }
             if (command === "done") {
                 sys.stopEvent();
-                client.printLine("CONGRATS! You win!");
+                client.printLine("CONGRATULATIONS ON WINNING!! You finished with 4 points!");
                 return;
             }
             if (command === "story") {
