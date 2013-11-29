@@ -146,19 +146,19 @@ events = ({
                 client.printLine("Points: 3")
                 return;
             }
-            if (command === "orange");
+            if (command === "orange") {
                 sys.stopEvent();
                 client.printLine("Sorry you are wrong. Please try again.");
                 client.printLine("Points: 3");
                 return;
             }
-            if (command === "red");
+            if (command === "red") {
                 sys.stopEvent();
                 client.printLine("Sorry you are wrong. Please try again.");
                 client.printLine("Points: 3");
                 return;
             }
-            if (command === "blue");
+            if (command === "blue") {
                 sys.stopEvent();
                 client.printLine("You are correct!");
                 cleint.printLine("Type ~done to move on.")
