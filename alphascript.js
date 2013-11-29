@@ -248,7 +248,7 @@ events = ({
             }
             if (command === "spin") {
                 sys.stopEvent();
-                    client.network().sendChanMessage(channel, "*** " + client.ownName() + " spins the wheel and gets a... " + sys.pokemon(sys.rand(1, 560)) + "!");
+                    client.network().sendChanMessage(channel, "±Dratini: " + client.ownName() + " spins the wheel and gets a... " + sys.pokemon(sys.rand(1, 560)) + "!");
                     return;
                 }
                 if (command === "osname") {
