@@ -37,8 +37,7 @@ var roll = {
   },
   if (command === "roll") {
   sys.stopEvent();
-  client.printLine("rolling D4 : " + roll.d4());
-  client.printLine("rolling D20 : " + roll.d20());
+  client.printLine("Meowth : " + roll.d20()); //Uh?
   }
   }
   }
