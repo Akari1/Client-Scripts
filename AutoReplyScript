@@ -1,0 +1,39 @@
+     events = ({
+	 beforeChannelMessage: function (message, channel, html) { //detects a channel specific message
+	  // EXTRACT MESSAGE BY TAKING OUT THE NAME
+        if (message.indexOf(':') >= 0) {message = message.substr(message.indexOf(':') + 2);}
+        // SET THE MESSAGE MESSAGE TEXT TO LOWERCASE
+       message = message.toLowerCase();
+       // CHANNELS ALLOWED FOR BOTS
+        // ******** ******** ********
+        var vBotChannelAllow = ["Alicorn Sandbox"];
+       
+        // CHECK CHANNELS ALLOWED
+        if (vBotChannelAllow.indexOf(channel) !== -1){
+            // RESPOND: My Name
+            if (message == vMyName.toLowerCase()){
+                client.network().sendChanMessage(channel, "Hello.");
+                }
+           
+            // RESPOND TO: Pichu / Pikachu / Raichu
+             if ("udefine " == message.substring(0, 8)) {
+                var vCommand = message.substring(8).toUpperCase();
+ 
+                var response = sys.synchronousWebCall("http://api.urbandictionary.com/v0/define?term=" + (encodeURIComponent(vCommand)));
+ 
+                var def = JSON.parse(response);
+ 
+                if (def.result_type != "exact") {
+                    client.network().sendChanMessage(channel, vCommand + " is not defined!")
+                }
+                else {
+                    client.network().sendChanMessage(channel, vCommand + ": " + def.list[0].definition);
+                }
+            }
+            }
+    // #### #### #### #### ####
+    // END OF ADD SCRIPT
+    // #### #### #### #### ####
+}
+})
+// This is a test script, not final and updates will be made
